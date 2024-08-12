@@ -1,0 +1,173 @@
+
+/* AI Assistant styling */
+.assistant-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: calc(100vh - 6rem - 12px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.assistant-container .comment-line {
+  align-self: self-start;
+  padding-left: 0.5rem;
+}
+
+.ai-assistant {
+  background-color: var(--bg-main);
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  border: solid 1px var(--bg-gray);
+  height: min(100%, 600px);
+  max-width: 600px;
+  position: relative;
+  /* box-shadow: 0 0 5px var(--bg-blue); */
+  
+}
+
+.ai-assistant > div {
+  padding: 1rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Hide scroll bar on IE and Edge */
+  scrollbar-width: none;  /* Hide scroll bar on Firefox */
+  height: min(100% - 5rem, 600px - 5rem);
+  margin-top: 0.5rem;
+}
+
+.ai-assistant > div::-webkit-scrollbar {
+  display: none;
+}
+
+.GPT-text-box img, .user-text-box img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px var(--bg-blue);
+}
+
+.GPT-text-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: calc(30px + 0.6rem);
+  letter-spacing: 0.03rem;
+  line-height: 1.2;
+}
+
+.user-text-box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: calc(30px + 0.6rem);
+  letter-spacing: 0.03rem;
+  line-height: 1.2;
+}
+
+.name-text-group .title {
+  font-size: 0.8rem;
+  color: var(--text-pink);
+  margin-bottom: 0.5rem;
+  color: var(--text-gray);
+}
+
+.name-text-group .text-content {
+  border: solid 1px var(--bg-gray);
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  line-height: 1.2;
+}
+
+.user-text-box .text-content {
+  color: var(--text-green);
+}
+
+.user-text-box .title {
+  text-align: end;
+}
+
+.text-content .text-content-hint {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin: 0.5rem auto;
+}
+
+.text-content strong {
+  color: var(--text-pink);
+}
+
+.example-questions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-questions > p {
+  border: solid 1px var(--bg-gray);
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* background-color: var(--bg-green); */
+  color: var(--text-green);
+}
+
+.example-questions > p:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--bg-green);
+}
+
+.ai-assistant form {
+  background-color: var(--bg-main);
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 -2px 5px var(--bg-gray);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ai-assistant form input {
+  display: block;
+  width: calc(100% - 60px - 1rem);
+  background-color: transparent;
+  border: solid 1px var(--bg-gray);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  color: var(--text-white);
+}
+
+.ai-assistant form button {
+  width: 60px;
+  background-color: var(--bg-pink);
+  border: solid 1px var(--bg-gray);
+  border-radius: 0.4rem;
+  color: var(--bg-main);
+}
+
+.ai-assistant form button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--bg-gray);
+}
+
+.ai-assistant .gpt-typing-effect {
+  height: auto;
+  padding-left: 1rem;
+  background-color: var(--bg-main);
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 -2px 5px var(--bg-gray);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  color: var(--text-gray);
+}

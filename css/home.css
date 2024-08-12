@@ -1,0 +1,107 @@
+/* hello page style */
+.hello-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 6rem - 12px);
+}
+  
+.brief-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brief-info-container {
+  width: fit-content;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+}
+
+.name {
+  font-size: 3.875rem;
+  margin: 0.8rem auto;
+}
+
+.role {
+  font-size: 2rem;
+  color: var(--text-blue-name);
+  margin-bottom: 2rem;
+}
+
+.comment-line {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 0.5rem;
+}
+
+.assistant-container {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes breath {
+  0% {
+    filter: blur(40px);
+  }
+  50% {
+    filter: blur(150px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
+
+.assistant-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  background: radial-gradient(circle at center, var(--bg-green) 0%, transparent 50%);
+  filter: blur(150px);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  animation: breath 4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking-cursor {
+  display: inline-block;
+  color: var(--text-white);
+  background-color: var(--bg-main);
+  width: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@media only screen and (max-width: 780px) {
+  .hello-wrapper {
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+    height: calc(100vh - 3rem - 12px);
+    padding-top: 3rem;
+  }
+
+
+  .hello-wrapper::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .hello-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .brief-info {
+    margin: 2rem auto 4rem auto;
+  }
+  
+}
