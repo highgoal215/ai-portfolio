@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header>
-            <NavLink className="site-logo" to="/">qingjie-shen</NavLink>
+            <NavLink className="site-logo" to="/">[your-site]</NavLink>
             <nav>
                 <NavLink to="/" style={getNavLinkStyle}>_hello</NavLink>
                 <NavLink to="/about" style={getNavLinkStyle}>_about-me</NavLink>
