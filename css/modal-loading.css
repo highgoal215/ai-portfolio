@@ -1,0 +1,43 @@
+@keyframes loadingBTT {
+    from {
+        opacity: 0.2;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingTTB {
+    from {
+        opacity: 0.2;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingLTR {
+    from {
+        opacity: 0.2;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingRTL {
+    from {
+        opacity: 0.2;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
