@@ -1,0 +1,34 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Handshake</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path fill="#e8d4d4"
+  d="M33 10.629c-2.676-2.677-5.9-2.739-8.028-.613-1.292 1.292-1.839 2-4.013 2-1.793 0-3.933-2.482-3.933-2.482L1 25.556l6.448 6.451-1.331 1.33A4 4 0 0 0 11.767 39l-1.4 1.4a4 4 0 0 0 5.655 5.656l1.407-1.408a4 4 0 0 0 5.661 5.65l1.11-1.113a4 4 0 0 0 5.666 5.645l1.243-1.246 1.242 1.246a3.989 3.989 0 0 0 5.872-5.39l.023-.025.887.887a4 4 0 0 0 5.654-5.656l1.413 1.415a4 4 0 0 0 5.658-5.661l-3.467-3.467v-.006l2.058 2.059a4 4 0 0 0 5.657-5.657L54.776 32 61 25.777 43.213 8H39a9 9 0 0 0-6 2.629z"
+  data-name="layer1"></path>
+  <g opacity=".15" data-name="opacity">
+    <path d="M14.614 36.154l1.74-1.741-1.75 1.749-.145.146.011-.009.144-.145zM28.3 45.088l-1.4 1.393-.01.012 1.409-1.41zm11.662-5.269l-.184.385C41.388 41.591 43.1 43.1 44 44c1.877 1.878-.651 5.517-4.277 6.783a4 4 0 0 0 5.064-6.137z"
+    fill="#000064"></path>
+    <path fill="#000064" d="M39 51c-1.713 2.571-5.62 1.473-6.706 1.1l-.738.739a3.993 3.993 0 0 1-4.661-6.35l-1.116 1.118-.015.012a4 4 0 0 1-5.646-5.663l.147-.148 2.686-2.687-2.692 2.693-.135.135-1.424 1.428a4 4 0 0 1-5.647-5.661l.609-.61.8-.8a4 4 0 0 1-5.64-5.669l-2.7 2.698A4 4 0 0 0 11.767 39l-1.4 1.4a4 4 0 0 0 5.655 5.656l1.407-1.408a4 4 0 0 0 5.661 5.65l1.11-1.113a4 4 0 0 0 5.666 5.645l1.243-1.246 1.242 1.246a3.987 3.987 0 0 0 6.679-3.84zm1-37c-2-2-5 2-8 4-2.674 1.783-4.549.388-4.926-.644a4 4 0 0 0 6.753 3.583l3.555-3.557 17.389 14.625 2.929-2.928C52.78 24.967 41.555 15.555 40 14z"></path>
+  </g>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M45.025 33.561l5.427 5.431a4 4 0 0 0 5.657-5.657L42.68 19.9c-2.441-2.44-5.137-2.672-8.016.208l-.838.828a4 4 0 0 1-5.655-5.656L31 12.455C34.266 9.186 36.124 8 38.873 8h4.34L61 25.777l-6.23 6.23"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M45.014 33.56l6.844 6.84a4 4 0 0 1-5.658 5.661l-6.239-6.242"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M39.962 39.819l4.825 4.827a4 4 0 1 1-5.652 5.654l-2.827-2.828"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M36.616 47.781l1.39 1.392a4 4 0 0 1-5.653 5.657l-1.39-1.394M7.45 32.007L1 25.556 17.021 9.531s2.132 2.482 3.924 2.482c2.174 0 2.706-.706 4-2 2.124-2.126 5.32-2.063 8 .613"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M14.6 36.163a4 4 0 1 0-5.653-5.655l-2.825 2.827a4 4 0 0 0 5.655 5.657z"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M20.258 41.819a4 4 0 0 0-5.658-5.657L10.362 40.4a4 4 0 0 0 5.655 5.656zm5.653 5.656a4 4 0 0 0-5.653-5.656l-2.827 2.827a4 4 0 0 0 5.655 5.654z"
+  data-name="stroke"></path>
+  <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+  stroke="#2e4369" fill="none" d="M31.258 53.437a4 4 0 1 0-5.658-5.656l-1.392 1.392a4 4 0 0 0 5.655 5.657z"
+  data-name="stroke"></path>
+</svg>

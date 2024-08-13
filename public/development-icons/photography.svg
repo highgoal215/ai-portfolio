@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Instagram Camera</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer3"
+  d="M62 8a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v16h60zM2 56a4 4 0 0 0 4 4h52a4 4 0 0 0 4-4V40H2z"
+  fill="#e8ddd9"></path>
+  <path data-name="layer5" fill="#bb806c" d="M2 24h60v16H2z"></path>
+  <circle data-name="layer4" cx="51" cy="15" r="3" fill="#fff432"></circle>
+  <circle data-name="layer3" cx="32" cy="32" r="14" fill="#e8ddd9"></circle>
+  <path data-name="opacity" d="M32 46a14 14 0 0 1-11.7-21.7 14 14 0 1 0 19.4 19.4A13.9 13.9 0 0 1 32 46z"
+  fill="#000064" opacity=".2"></path>
+  <circle data-name="layer2" cx="32" cy="32" r="8" fill="#78d1f4"></circle>
+  <circle data-name="layer1" cx="34" cy="30" r="2" fill="#fff"></circle>
+  <circle data-name="stroke" cx="51" cy="15" r="3" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+  stroke-linejoin="round"></circle>
+  <rect data-name="stroke" x="2" y="4" width="60" height="56" rx="4"
+  ry="4" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></rect>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-miterlimit="10" stroke-width="2" d="M2 24h18.5M2 40h18.5M62 24H43.5M62 40H43.5"
+  stroke-linejoin="round"></path>
+  <circle data-name="stroke" cx="32" cy="32" r="14" fill="none" stroke="#2e4369"
+  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></circle>
+  <circle data-name="stroke" cx="32" cy="32" r="8" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+  stroke-linejoin="round"></circle>
+</svg>

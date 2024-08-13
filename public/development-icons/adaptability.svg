@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Full Screen</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  fill="#78d1f4" d="M20 24h24v16H20z"></path>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M20 24h24v16H20zM2 18V6h12M2.003 6L14 18m48 0V6H50m11.997 0L50 18M2 46v12h12M2.003 58L14 46m48 0v12H50m11.997 0L50 46"></path>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Accept</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer3"
+  fill="#fff" d="M2 18h60v40H2z"></path>
+  <path data-name="layer2" fill="#a6b1c9" d="M2 6h60v12H2z"></path>
+  <circle data-name="layer1" cx="8" cy="12" r="1" fill="#f27e7c"></circle>
+  <circle data-name="layer1" cx="15" cy="12" r="1" fill="#f27e7c"></circle>
+  <circle data-name="layer1" cx="22" cy="12" r="1" fill="#f27e7c"></circle>
+  <path data-name="opacity" fill="#000064" opacity=".15" d="M2 18h4v40H2zM2 6h4v12H2z"></path>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M2 6h60v12H2zm0 12v40h60V18"></path>
+  <circle data-name="stroke" cx="8" cy="12" r="1" fill="none" stroke="#2e4369"
+  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+  <circle data-name="stroke" cx="15" cy="12" r="1" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+  <circle data-name="stroke" cx="22" cy="12" r="1" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+  <path data-name="stroke" d="M42 30L28 44l-7-7" fill="none" stroke="#2e4369"
+  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Messaging App</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer3"
+  d="M43 2C32.5 2 24 9.2 24 18c0 0 .1 1.3.2 2 4.7.1 9.8 2.9 9.8 10.1V32a21.3 21.3 0 0 0 8 2v8l9.8-9.8c6-2.7 10.2-8 10.2-14.2 0-8.8-8.5-16-19-16z"
+  fill="#a6dbff"></path>
+  <circle data-name="layer2" cx="43" cy="18" r="1" fill="#2e4369"></circle>
+  <circle data-name="layer2" cx="35" cy="18" r="1" fill="#2e4369"></circle>
+  <circle data-name="layer2" cx="51" cy="18" r="1" fill="#2e4369"></circle>
+  <path data-name="layer1" d="M37.4 54.3c-8.2-1.4-7.4-3.5-7.4-4.9v-2.5a13.9 13.9 0 0 0 4-10.1v-6.7C34 22.8 28.7 20 24 20s-10 2.8-10 10.1v6.7a13.8 13.8 0 0 0 4.1 10.1v2.5c0 1.4.7 3.5-7.4 4.9S2 60 2 62h44c0-2-1.3-6.4-8.6-7.7z"
+  fill="#8ca0c8"></path>
+  <path data-name="opacity" d="M13 56c4-1 5-4 10-4s5-5 5-5-1 1-4 1-5-4-5-7V30c0-3 0-10 5-10-4.7 0-10 2.8-10 10.1v6.7a13.8 13.8 0 0 0 4.1 10.1v2.5c0 1.4.7 3.5-7.4 4.9S2 60 2 62h6.8s.2-5 4.2-6z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="opacity" d="M48 30a25.1 25.1 0 0 1-14.9-4.6 11.4 11.4 0 0 1 .9 4.7V32a21.3 21.3 0 0 0 8 2v8l9.8-9.8a18.9 18.9 0 0 0 5.7-3.8A27.1 27.1 0 0 1 48 30zM27 14.5A12.7 12.7 0 0 1 30.4 6 15 15 0 0 0 24 18s.1 1.3.2 2a11.1 11.1 0 0 1 4.9 1.2 12.2 12.2 0 0 1-2.1-6.7z"
+  fill="#000064" opacity=".12"></path>
+  <path data-name="stroke" d="M34 32a21.3 21.3 0 0 0 8 2v8l9.8-9.8c6-2.7 10.2-8 10.2-14.2 0-8.8-8.5-16-19-16S24 9.2 24 18c0 0 .1 1.3.2 2"
+  fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+  <circle data-name="stroke" cx="43" cy="18" r="1" fill="none" stroke="#2e4369"
+  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"></circle>
+  <circle data-name="stroke" cx="35" cy="18" r="1" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+  stroke-linejoin="round"></circle>
+  <circle data-name="stroke" cx="51" cy="18" r="1" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+  stroke-linejoin="round"></circle>
+  <path data-name="stroke" d="M37.4 54.3c-8.2-1.4-7.4-3.5-7.4-4.9v-2.5a13.9 13.9 0 0 0 4-10.1v-6.7C34 22.8 28.7 20 24 20s-10 2.8-10 10.1v6.7a13.8 13.8 0 0 0 4.1 10.1v2.5c0 1.4.7 3.5-7.4 4.9S2 60 2 62h44c0-2-1.3-6.4-8.6-7.7z"
+  fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+</svg>

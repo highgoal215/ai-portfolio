@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Edit Document</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer4"
+  fill="#ebf5ff" d="M34.4 50.7l7.6-7.6V18H26V2H2v54h30.3l2.1-5.3z"></path>
+  <path data-name="layer3" fill="#fff" d="M42 18L26 2v16h16z"></path>
+  <path data-name="opacity" fill="#000064" opacity=".15" d="M22 2v21h20v-5H26V2h-4z"></path>
+  <path data-name="layer2" fill="#efcaa8" d="M30 62l11.4-4.3-7-7L30 62z"></path>
+  <path data-name="layer1" fill="#f27e7c" d="M55.1 30L34.4 50.7l7 7L62.2 37l-7.1-7z"></path>
+  <path data-name="opacity" fill="#000064" opacity=".15" d="M34.4 50.7l7.6-7.6v-6L27.4 51.7 25.7 56h6.6l2.1-5.3z"></path>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-miterlimit="10" stroke-width="2" d="M32.3 56H2V2h24l16 16v25.1"
+  stroke-linejoin="round"></path>
+  <path data-name="stroke" fill="none" stroke="#2e4369" stroke-linecap="round"
+  stroke-miterlimit="10" stroke-width="2" d="M26 2v16h16m13.1 12L34.4 50.7 30 62l11.4-4.3L62.2 37l-7.1-7zM34.4 50.7l7 7"
+  stroke-linejoin="round"></path>
+</svg>

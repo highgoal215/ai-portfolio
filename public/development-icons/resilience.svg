@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>RFID Signal</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer1"
+  cx="32" cy="32.2" r="4" fill="#9cf"></circle>
+  <path data-name="opacity" d="M34 33.2a4 4 0 0 1-4-4 3.9 3.9 0 0 1 0-.5 4 4 0 1 0 6 4 4 4 0 0 1-2 .5z"
+  fill="#000064" opacity=".14"></path>
+  <circle data-name="stroke" cx="32" cy="32.2" r="4" fill="none"
+  stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+  stroke-linejoin="round"></circle>
+  <path data-name="stroke" d="M24.6 41.6a12 12 0 0 1 0-18.8m14.8 0a12 12 0 0 1 0 18.9M18.2 48a21 21 0 0 1 0-31.6m27.6 0a21 21 0 0 1 0 31.7m-34 6.3a30 30 0 0 1 0-44.4m40.4 0a30 30 0 0 1 0 44.4"
+  fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+</svg>
