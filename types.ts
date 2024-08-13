@@ -64,3 +64,62 @@ export interface FormData {
     subject: string;
     content: string;
 }
+
+// projects data type
+export interface Project {
+    id: number;
+    name: string;
+    link: string;
+    desc: string;
+    imgSrc: string;
+    tags: string[];
+    type: string[];
+    detailDesc: {
+      title: string;
+      desc: string[];
+    }[];
+    demoLink: string;
+    githubLink: string;
+    video: {
+      title: string;
+      desc: string;
+      videoId: string;
+    };
+}
+
+// image card type
+export interface ImageCardProps {
+    imgSrc: string;
+    title: string;
+    hoverText?: string;
+    tags: string[];
+    notice?: string;
+    link?: string; 
+    state?: {
+        search: string;
+        type: string | null;
+    };
+}
+
+// projects interfaces
+export interface ProjectDetailDesc {
+    title: string;
+    desc: string[];
+  }
+  
+export interface ProjectVideo {
+    title: string;
+    desc: string;
+    videoId: string;
+}
+  
+export interface ProjectInfo {
+    id: number;
+    name: string;
+    imgSrc: string;
+    tags: string[];
+    detailDesc: ProjectDetailDesc[];
+    demoLink: string;
+    githubLink: string;
+    video: ProjectVideo;
+}
