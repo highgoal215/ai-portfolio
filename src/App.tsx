@@ -10,6 +10,7 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProjectDetail from './components/Projects/ProjectDetail'
+import PageNotFound from './components/NotFound'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='projects' element={<Projects />} />
           <Route path='projects/:projectId' element={<ProjectDetail />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='*' element={<PageNotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
