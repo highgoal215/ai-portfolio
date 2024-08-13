@@ -86,24 +86,6 @@ export default function Projects() {
                     >
                         <img src={jsLogo} alt="JavaScript" />JavaScript
                     </button>
-                    <button
-                        onClick={() => {
-                            handleFilterChange('type', 'cms');
-                            setActiveBtn('cms');
-                        }}
-                        className={`projects-type-btn ${activeBtn === 'cms' ? 'activeBtn' : ''}`}
-                    >
-                        <img src={cmsLogo} alt="CMS" />CMS
-                    </button>
-                    <button
-                        onClick={() => {
-                            handleFilterChange('type', 'ux');
-                            setActiveBtn('ux');
-                        }}
-                        className={`projects-type-btn ${activeBtn === 'ux' ? 'activeBtn' : ''}`}
-                    >
-                        <img src={figmaLogo} alt="UX/UI" />UX/UI
-                    </button>
                 </nav>
             </div>
             <div className="projects-wrapper">
