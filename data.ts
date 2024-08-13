@@ -218,13 +218,14 @@ export const projectsData = [
       new URL('/development-icons/cloudflare.svg', import.meta.url).href,
       new URL('/development-icons/openai.png', import.meta.url).href,
       new URL('/development-icons/react.svg', import.meta.url).href,
+      new URL('/development-icons/typescript.svg', import.meta.url).href,
       new URL('/development-icons/css.svg', import.meta.url).href
     ],
     type: [
       "cloudflare",
       "ai",
       "react",
-      "javascript",
+      "typescript",
       "css",
       "html"
     ],
@@ -273,7 +274,6 @@ export const projectsData = [
     ],
     type: [
       "vue",
-      "javascript",
       "restapi",
       "html",
       "css"
@@ -388,7 +388,6 @@ export const projectsData = [
     ],
     type: [
       "react",
-      "javascript",
       "html",
       "css"
     ],

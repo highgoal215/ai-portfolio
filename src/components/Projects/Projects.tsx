@@ -9,6 +9,7 @@ import "../../../css/projects.css"
 import reactLogo from "../../../public/development-icons/react.svg";
 import aiLogo from "../../../public/development-icons/openai.png";
 import jsLogo from "../../../public/development-icons/javascript.svg";
+import tsLogo from "../../../public/development-icons/typescript.svg";
 import allLogo from "../../../public/development-icons/adaptability.svg";
 import vueLogo from "../../../public/development-icons/vuejs.svg";
 
@@ -83,6 +84,15 @@ export default function Projects() {
                         className={`projects-type-btn ${activeBtn === 'javascript' ? 'activeBtn' : ''}`}
                     >
                         <img src={jsLogo} alt="JavaScript" />JavaScript
+                    </button>
+                    <button
+                        onClick={() => {
+                            handleFilterChange('type', 'typescript');
+                            setActiveBtn('typescript');
+                        }}
+                        className={`projects-type-btn ${activeBtn === 'typescript' ? 'activeBtn' : ''}`}
+                    >
+                        <img src={tsLogo} alt="typescript" />TypeScript
                     </button>
                 </nav>
             </div>
