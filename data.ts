@@ -230,14 +230,30 @@ export const projectsData = [
     ],
     detailDesc: [
       {
-        title: "Under Constration",
+        title: "Project Overview:",
         desc: [
-          "Ongoing project, will be available to you in a few days."
+          "This project is a modern and responsive portfolio website built using React and TypeScript. It integrates OpenAI's AI Assistant to create a customized chatbot capable of answering questions related to your CV and professional experience."
+        ]
+      },
+      {
+        title: "Key Features:",
+        desc: [
+          "AI Assistant: Easily set up your OpenAI-powered Assistant by uploading your CV and linking to a Cloudflare Worker. This feature brings your personalized chatbot to life, providing intelligent responses to inquiries about your career.",
+          "Customizable: All personal data is organized within the `data.ts` file. By populating the given data structure with your information, you can generate a fully responsive and well-organized portfolio that showcases your bio, education, skills, and work experience.",
+          "Projects Showcase: Display your selected projects categorized by different fields, each with a detailed page that includes a demo, GitHub link, project description, and even video content.",
+          "Contact: Follow a step-by-step guide to integrate EmailJS, enabling a free email notification service that allows you to receive messages directly from users of your portfolio website.",
+          "404 Page: A thoughtfully designed 404 error page ensures a user-friendly experience by preventing dead ends and guiding users back to your site's main content."
+        ]
+      },
+      {
+        title: "Design Credit:",
+        desc: [
+          "Design inspiration and credit go to Yanka Darelova. You can view her work on Figma at https://www.figma.com/@darelova."
         ]
       }
     ],
     demoLink: 'https://qingjie.dev/',
-    githubLink: 'https://github.com/QingjieShen',
+    githubLink: 'https://github.com/QingjieShen/ai-portfolio',
     video: {
       title: '',
       desc: '',
