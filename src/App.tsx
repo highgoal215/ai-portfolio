@@ -5,10 +5,10 @@ import About from './components/About/About'
 import Bio from './components/About/Bio'
 import Education from './components/About/Education'
 import Skills from './components/About/Skills'
+import TechExperiences from './components/About/TechExperiences'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
-
 
   return (
     <BrowserRouter>
@@ -19,6 +19,7 @@ function App() {
             <Route index element={<Bio />} />
             <Route path='education' element={<Education />} />
             <Route path='skills' element={<Skills />} />
+            <Route path='experience' element={<TechExperiences />} />
           </Route>
         </Route>
       </Routes>

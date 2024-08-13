@@ -48,3 +48,11 @@ export interface TypeWriterProps {
     text: string;
     speed?: number;
 }
+
+// experience
+export interface ExperienceType {
+    role: string;
+    company: string;
+    time: string;
+    description: string[];
+}
