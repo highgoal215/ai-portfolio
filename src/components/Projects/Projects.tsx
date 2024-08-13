@@ -9,9 +9,7 @@ import "../../../css/projects.css"
 import reactLogo from "../../../public/development-icons/react.svg";
 import aiLogo from "../../../public/development-icons/openai.png";
 import jsLogo from "../../../public/development-icons/javascript.svg";
-import figmaLogo from "../../../public/development-icons/figma.svg";
 import allLogo from "../../../public/development-icons/adaptability.svg";
-import cmsLogo from "../../../public/development-icons/wordpress.png";
 import vueLogo from "../../../public/development-icons/vuejs.svg";
 
 export default function Projects() {
