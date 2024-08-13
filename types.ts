@@ -56,3 +56,11 @@ export interface ExperienceType {
     time: string;
     description: string[];
 }
+
+// contact form type
+export interface FormData {
+    name: string;
+    email: string;
+    subject: string;
+    content: string;
+}

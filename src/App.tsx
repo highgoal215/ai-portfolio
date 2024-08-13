@@ -6,6 +6,7 @@ import Bio from './components/About/Bio'
 import Education from './components/About/Education'
 import Skills from './components/About/Skills'
 import TechExperiences from './components/About/TechExperiences'
+import Contact from './components/Contact'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='skills' element={<Skills />} />
             <Route path='experience' element={<TechExperiences />} />
           </Route>
+          <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
