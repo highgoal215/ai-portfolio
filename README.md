@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# AI Portfolio Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a personal portfolio website built with React and TypeScript, featuring an AI Assistant powered by OpenAI. The AI chatbot is designed to answer questions related to your CV, providing a dynamic and interactive experience for users. The project is highly customizable, allowing you to easily update your personal information and showcase your work.
 
-Currently, two official plugins are available:
+## Complete Demo
+[qingjie.dev](https://qingjie.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+### AI Assistant
+- Integrate your OpenAI Assistant by uploading your CV and passing in the worker link to bring the chatbot to life. This feature allows visitors to interact with your AI Assistant and get answers related to your career.
 
-## Expanding the ESLint configuration
+### Customizable
+- All personal information is managed in the `data.ts` file. By simply inputting your details into the provided structure, you can create a well-organized and fully responsive portfolio website that displays your bio, education, skills, and experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Projects Showcase
+- Display your projects by different categories, each with a detailed page that includes a demo, GitHub link, description, and even video. This feature helps you effectively present your work to potential employers or clients.
 
-- Configure the top-level `parserOptions` property like this:
+### Contact
+- Set up your EmailJS service by following the step-by-step guide, allowing you to receive free email notifications from users who send messages through your portfolio website.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 404 Page
+- The project includes a well-designed 404 page, ensuring that your website has no dead ends and remains user-friendly.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Prerequisites
+- Node.js
+- npm or yarn
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Setup
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/QingjieShen/ai-portfolio.git
+   ```
+2. **Install Dependencies:**
+   ```
+   npm install
+   or
+   yarn install
+   ```
+3. **Run the Development Server:**
+   ```
+   npm run dev
+   ```
+
+### Credit
+Design inspiration and credit go to [Yanka Darelova](https://www.figma.com/@darelova)
