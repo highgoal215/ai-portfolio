@@ -211,8 +211,8 @@ export const projectsData = [
   {
     id: 1,
     name: "Opensource Portfolio website",
-    link: "https://github.com/QingjieShen",
-    desc: "Under construction...",
+    link: "https://github.com/QingjieShen/ai-portfolio",
+    desc: "Your project brief introduction.",
     imgSrc: new URL('/project-images/web-dev-portfolio-640_x_360.png', import.meta.url).href,
     tags: [
       new URL('/development-icons/cloudflare.svg', import.meta.url).href,
@@ -246,9 +246,9 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "Car Product with REST API",
-    link: "https://github.com/QingjieShen/mtm6407-headless-cms-front-end",
-    desc: "Build the REST API using a headless CMS and host it on Render to provide data for the front-end, built with Vue.js, to fetch and manage state.",
+    name: "Your Project Name",
+    link: "project_link",
+    desc: "Your Project Description",
     imgSrc: new URL('/project-images/vehicle-product-640_x_360.png', import.meta.url).href,
     tags: [
       new URL('/development-icons/vuejs.svg', import.meta.url).href,
@@ -266,7 +266,7 @@ export const projectsData = [
       {
         title: "Project Overview:",
         desc: [
-          "This project is a comprehensive vehicle product display website, showcasing images and detailed information about various vehicles. All vehicle images were professionally captured by Qingjie (Clark) in 2023.",
+          "This project is a comprehensive vehicle product display website, showcasing images and detailed information about various vehicles.",
           "The website provides detailed information including the maker, model, year, and a description for each vehicle, with fictional prices included for display purposes."
         ]
       },
@@ -278,25 +278,25 @@ export const projectsData = [
           "Back-End:",
           "- The REST API is powered by a headless CMS built with Strapi, and hosted on Render, ensuring reliable data provision to the front-end.",
           "Deployment:",
-          "- The website is deployed and accessible online at https://headless-cms-product-review.netlify.app/."
+          "- The website is deployed and accessible online at https://qingjie.dev."
         ]
       },
       {
         title: "Key Features:",
         desc: [
-          "Home Page:", 
-          "- Displays a summary of all vehicles, featuring a search functionality to filter results by color, make, model, description, and year.",
-          "Detailed View:", 
-          "- Each vehicle has a dedicated page with comprehensive information, accessible through navigation from the home page.",
-          "Search Functionality:", 
-          "- Allows users to search vehicles based on specific criteria such as year, model, maker, description, and color.",
-          "Loading State:", 
-          "- A visual loading effect is implemented to enhance user experience while data is being fetched from the server."
+          "Key feature 1:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 2:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 3:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 4:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous)."
         ]
       }
     ],
-    demoLink: 'https://headless-cms-product-review.netlify.app',
-    githubLink: 'https://github.com/QingjieShen/mtm6407-headless-cms-front-end',
+    demoLink: 'https://your-demo-link',
+    githubLink: 'https://your-github-repo',
     video: {
       title: '',
       desc: '',
@@ -305,9 +305,9 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Insightful Quizzes",
-    link: "https://github.com/QingjieShen/quize_app/tree/main",
-    desc: "An app that can help you test your computer programing knowledge",
+    name: "Your Project Name",
+    link: "project_link",
+    desc: "Your Project Description",
     imgSrc: new URL('/project-images/quize_app-1920_x_1280.png', import.meta.url).href,
     tags: [
       new URL('/development-icons/javascript.svg', import.meta.url).href,
@@ -321,37 +321,39 @@ export const projectsData = [
     ],
     detailDesc: [
       {
-        title: "Brief Introduction:",
+        title: "Project Overview:",
         desc: [
-          "This app helps test your computer programming knowledge using questions from [quizapi.io]."
+          "This project is a comprehensive vehicle product display website, showcasing images and detailed information about various vehicles.",
+          "The website provides detailed information including the maker, model, year, and a description for each vehicle, with fictional prices included for display purposes."
         ]
       },
       {
-        title: "Main Features:",
+        title: "Technology Stack:",
         desc: [
-          "Fetching quizzes based on user selections: category, difficulty, number, and tags.",
-          "Fetching data detection: Adds a prompt if data fetching fails, allowing the user to return to the main page.",
-          "Timer: Starts a countdown based on the number of selected quizzes, with a second-chance feature if time is greater than 1 minute.",
-          "Editable answers before submission: Users can navigate through questions and deselect answers if needed.",
-          "Grading system: Changes color of score text, grade text, and correct answers based on the total score.",
-          "Answer details display: Shows correct answers, wrong answers, and user's choices.",
-          "Easy access to home page and new challenge: Buttons on result and answer details pages for easy navigation.",
-          "Local Storage: Stores user selections locally for automatic loading next time."
+          "Front-End:",
+          "- The website is built using Vue.js, with @vueuse/core utilized for efficient data fetching and state management.",
+          "Back-End:",
+          "- The REST API is powered by a headless CMS built with Strapi, and hosted on Render, ensuring reliable data provision to the front-end.",
+          "Deployment:",
+          "- The website is deployed and accessible online at https://qingjie.dev."
         ]
       },
       {
-        title: "Main Challenges:",
+        title: "Key Features:",
         desc: [
-          "Data processing: Had to switch from using the 'correct_answer' object to the 'correct_answers' object due to incomplete data.",
-          "Correct answers and user chosen answers comparison: Compared arrays by sorting and converting to strings using JSON.stringify().",
-          "Timer status management: Initialized countdown parameters in the async fetching function to handle timer issues.",
-          "Special character handling: Used regular expressions to replace tags with HTML character entities for correct display."
+          "Key feature 1:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 2:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 3:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 4:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous)."
         ]
       }
-    ]
-    ,
-    demoLink: 'https://qingjieshen.github.io/quize_app/',
-    githubLink: 'https://github.com/QingjieShen/quize_app',
+    ],
+    demoLink: 'https://your-demo-link',
+    githubLink: 'https://your-github-repo',
     video: {
       title: '',
       desc: '',
@@ -360,9 +362,9 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "PokéCapture Game",
-    link: "https://github.com/QingjieShen/pokemoncards",
-    desc: "A game built with ReactJS where you catch Pokémon and level them up",
+    name: "Your Project Name",
+    link: "project_link",
+    desc: "Your Project Description",
     imgSrc: new URL('/project-images/pokemon-640_x_360.png', import.meta.url).href,
     tags: [
       new URL('/development-icons/react.svg', import.meta.url).href,
@@ -376,42 +378,39 @@ export const projectsData = [
     ],
     detailDesc: [
       {
-        title: "PokéCapture:",
+        title: "Project Overview:",
         desc: [
-          "A simulation game built with ReactJS where you catch and collect Pokémon.",
-          "Refresh the home page to find new Pokémon, catch them, and view details on your 'My Pokemon' page."
+          "This project is a comprehensive vehicle product display website, showcasing images and detailed information about various vehicles.",
+          "The website provides detailed information including the maker, model, year, and a description for each vehicle, with fictional prices included for display purposes."
         ]
       },
       {
-        title: "Versions:",
+        title: "Technology Stack:",
         desc: [
-          "v1.2 (15/04/2024):",
-          " - Capture success not guaranteed.",
-          " - Optimized visual effects.",
-          " - Code-level optimizations.",
-          "v1.1 (13/04/2024):",
-          " - Changed local data structure, clear local storage if 'My Pokemon' page is empty.",
-          " - Updated visual effects.",
-          " - Added Pokémon type filter and search params.",
-          " - Different colors for types on detail and 'My Pokemon' pages.",
-          " - Display gif image if available.",
-          " - Added catching state for each Pokémon.",
-          "v1.0 (11/04/2024):",
-          " - Beta version: Refresh, capture (success guaranteed), preview gallery, view details, release Pokémon."
+          "Front-End:",
+          "- The website is built using Vue.js, with @vueuse/core utilized for efficient data fetching and state management.",
+          "Back-End:",
+          "- The REST API is powered by a headless CMS built with Strapi, and hosted on Render, ensuring reliable data provision to the front-end.",
+          "Deployment:",
+          "- The website is deployed and accessible online at https://qingjie.dev."
         ]
       },
       {
-        title: "Main Challenges:",
+        title: "Key Features:",
         desc: [
-          "First time using React Router, faced many difficulties but completed the project.",
-          "Dynamic Router: Needed for each Pokémon's unique ID and information.",
-          "TypeFilter: Added to distinguish Pokémon by label using useParams.",
-          "Handling Search Params: Used useLocation and Link states to maintain filter state when navigating to Pokémon details."
+          "Key feature 1:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 2:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 3:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous).",
+          "Key feature 4:", 
+          "- Ready, fire, aim: the fast approach to software development. Ready, aim, aim, aim, aim: the slow approach to software development. (Anonymous)."
         ]
       }
     ],
-    demoLink: 'https://pokedex-card-game.netlify.app/',
-    githubLink: 'https://github.com/QingjieShen/pokemoncards',
+    demoLink: 'https://your-demo-link',
+    githubLink: 'https://your-github-repo',
     video: {
       title: '',
       desc: '',
