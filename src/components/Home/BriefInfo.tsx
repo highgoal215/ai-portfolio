@@ -1,9 +1,5 @@
 import TypeWriter from "./TypeWriter";
-
-interface BriefInfoProps {
-    name: string;
-    role: string;
-}
+import { BriefInfoProps } from "../../../types";
 
 export default function BriefInfo({ name, role }: BriefInfoProps) {
     return (

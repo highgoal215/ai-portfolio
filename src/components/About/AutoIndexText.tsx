@@ -1,9 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-
-interface AutoIndexTextProps {
-    text: string;
-    title: string;
-}
+import { AutoIndexTextProps } from "../../../types";
 
 export default function AutoIndexText({ text, title }: AutoIndexTextProps) {
     const [formattedText, setFormattedText] = useState<string[]>([]);

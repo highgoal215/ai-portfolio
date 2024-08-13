@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
+import { TypeWriterProps } from "../../../types";
 
-interface TypeWriterProps {
-    text: string;
-    speed?: number;
-}
 
 export default function TypeWriter({ text, speed = 100 }: TypeWriterProps) {
     const [displayedText, setDisplayedText] = useState<string>('');

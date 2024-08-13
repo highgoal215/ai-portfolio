@@ -4,11 +4,7 @@ import UserText from './UserText';
 import GptTyping from './GptTyping';
 // import { defaultPrompts } from '../../prompts';
 import "../../../../css/aiassistant.css";
-
-interface Message {
-    type: 'user' | 'system';
-    content: string;
-}
+import { Message } from '../../../../types';
 
 const fetchUrl: string = "your worker url"
 

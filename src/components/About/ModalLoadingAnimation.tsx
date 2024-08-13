@@ -1,11 +1,6 @@
 import React from 'react';
 import "../../../css/modal-loading.css";
-
-interface ModalLoadingAnimationProps {
-    children: React.ReactNode;
-    duration: string; // e.g., '2s', '1.5s'
-    direction: string; // 'loadingBTT', 'loadingTTB', 'loadingLTR', 'loadingRTL'
-}
+import { ModalLoadingAnimationProps } from '../../../types';
 
 export default function ModalLoadingAnimation({ children, duration, direction }: ModalLoadingAnimationProps) {
     

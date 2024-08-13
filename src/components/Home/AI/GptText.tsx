@@ -1,10 +1,5 @@
 import GPTAvatarImg from "../../../../public/assistant.svg";
-
-interface GptTextProps {
-    response?: React.ReactNode;
-    isDefault: boolean;
-    handleSelectQuestion?: (question: string) => void;
-}
+import { GptTextProps } from "../../../../types";
 
 export default function GptText({ response, isDefault, handleSelectQuestion }: GptTextProps) {
     return (
