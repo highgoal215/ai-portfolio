@@ -1,5 +1,5 @@
 import CloseIcon from "../LogoComponents/CloseIcon";
-import { webDevSkillsData, otherSkillsData } from "../../../skills";
+import { webDevSkillsData, otherSkillsData } from "../../../data";
 import SkillsCategory from "./SkillsCategory";
 import ModalLoadingAnimation from "./ModalLoadingAnimation";
 import "../../../css/skills.css";

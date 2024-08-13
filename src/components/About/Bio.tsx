@@ -2,14 +2,9 @@ import CloseIcon from "../LogoComponents/CloseIcon";
 import AutoIndexText from "./AutoIndexText";
 import ModalLoadingAnimation from "./ModalLoadingAnimation";
 import heroImg from "../../../public/hero.jpg";
+import { bioIntroduction } from "../../../data";
 
 export default function Bio() {
-    const introduction = `
-
-    I bring a unique blend of creativity and technical expertise from my background in **XXXX** **XXXX** and **XXXX** **XXXX**. 
-
-    
-    It would appear that we have reached the limits of what it is possible to achieve with computer technology, although one should be careful with such statements, as they tend to sound pretty silly in 5 years. (John Von Neumann, circa 1949)`;
 
     return (
         <div className="bio-wrapper">
@@ -19,7 +14,7 @@ export default function Bio() {
                 </div>
                 <div className="bio-content">
                     <ModalLoadingAnimation duration="0.5s" direction="loadingBTT">
-                        <AutoIndexText text={introduction} title={"--About me--"} />
+                        <AutoIndexText text={bioIntroduction} title={"--About me--"} />
                     </ModalLoadingAnimation>
                 </div>
             </div>

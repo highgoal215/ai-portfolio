@@ -1,4 +1,71 @@
-const webDevSkillsData = [
+export const bioIntroduction = `
+
+I bring a unique blend of creativity and technical expertise from my background in **XXXX** **XXXX** and **XXXX** **XXXX**. 
+
+
+It would appear that we have reached the limits of what it is possible to achieve with computer technology, although one should be careful with such statements, as they tend to sound pretty silly in 5 years. (John Von Neumann, circa 1949)`;
+
+export const education1 = `
+**Year:** Jan 2023 - Aug 2024
+
+**Field:** Interactive Media Design
+
+**School:** Algonquin College, Ottawa, Ontario, Canada
+
+**Credential:** College Diploma
+
+**GPA:** 3.97/4
+
+**Dean's List:** 2023 - 2024
+
+**--Main Courses--**
+
+Web Development
+
+UX/UI Design
+
+Graphic Design
+
+Content Management System
+
+Media Project Planning
+
+Photography
+
+Video Production
+`;
+
+export const education2 = `
+**Year:** Start date - End date
+
+**Field:** Your Program
+
+**School:** Your School Information
+
+**Credential:** Degree
+
+**--Main Courses--**
+
+Course 1
+
+Course 2
+
+Course 3
+
+Course 4
+
+Course 5
+
+Course 6
+
+Course 7
+
+Course 8
+
+Course 9
+`;
+
+export const webDevSkillsData = [
     {
       category: "Language & Frameworks",
       skills: [
@@ -59,7 +126,7 @@ const webDevSkillsData = [
     }
   ];
   
-  const otherSkillsData = [
+  export const otherSkillsData = [
     {
       category: "Soft Skills",
       skills: [
@@ -114,4 +181,3 @@ const webDevSkillsData = [
     }
   ];
   
-  export { webDevSkillsData, otherSkillsData };
