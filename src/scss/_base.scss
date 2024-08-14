@@ -1,0 +1,102 @@
+@use '_variables';
+
+* {
+    box-sizing: border-box;
+}
+
+/* header style */
+header {
+    display: flex;
+    width: 100%;
+    border: variables.$general-border;
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+    }
+
+    .header-email {
+        display: block;
+        margin-left: auto;
+    }
+
+    a {
+        padding: 1rem 1.5rem;
+        border: variables.$general-border;
+        transition: color .3s, border-color .5s;
+    }
+
+    .site-logo {
+        padding-right: 6rem;
+    }
+}
+
+/* footer style */
+footer {
+    position: absolute;
+    bottom: 0;
+    color: variables.$text-gray;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: variables.$general-border;
+
+    a, p {
+        padding: 1rem 1.5rem;
+        border: variables.$general-border;
+    }
+
+    .footer-left {
+        display: flex;
+
+        a {
+            border-left: none;
+            border-top: none;
+        }
+    }
+
+    .footer-left > p {
+        min-width: 159px;
+        border-top: none;
+        border-left: none;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+
+    svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: variables.$mobile-screen) {
+
+    .site-logo, .header-email, footer-left > p {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        background: variables.$bg-main;
+        z-index: 1000;
+    }
+
+    footer {
+        position: fixed;
+        background-color: variables.$bg-main;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,287 @@
+@use '_variables';
+
+@mixin center-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hide-scroll-bar {
+    -ms-overflow-style: none;  /* Hide scroll bar on IE and Edge */
+    scrollbar-width: none;  /* Hide scroll bar on Firefox */
+}
+
+@keyframes breath-blur {
+    0% {
+      filter: blur(40px);
+    }
+    50% {
+      filter: blur(150px);
+    }
+    100% {
+      filter: blur(40px);
+    }
+}
+
+@keyframes type-writer-blinking {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+
+.global-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: variables.$bg-main;
+    color: variables.$text-white;
+}
+
+.hello-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: variables.$sub-container-height;
+
+    .brief-info {
+        height: 100%;
+        @include center-flex-column();
+
+        .brief-info-container {
+            width: fit-content;
+            font-size: 1.1rem;
+            padding: 1.5rem;
+
+            .name {
+                font-size: 3.875rem;
+                margin: 0.8rem auto;
+            }
+
+            .role {
+                font-size: 2rem;
+                color: variables.$text-blue-name;
+                margin-bottom: 2rem;
+            }
+
+            .comment-line {
+                font-size: 1rem;
+                color: variables.$text-gray;
+                margin-bottom: 0.5rem;
+            }
+
+            .blinking-cursor {
+                display: inline-block;
+                color: variables.$text-white;
+                background-color: variables.$bg-main;
+                width: 2px;
+                animation: type-writer-blinking 1s step-end infinite;
+            }
+        }
+    }
+
+    .assistant-container {
+        position: relative;
+        z-index: 1;
+        @include center-flex-column();
+        height: variables.$sub-container-height;
+        padding: 1rem;
+
+        .comment-line {
+            align-self: self-start;
+            padding-left: 0.5rem;
+        }
+
+        .ai-assistant {
+            background-color: variables.$bg-main;
+            margin-top: 0.5rem;
+            border-radius: 1rem;
+            border: solid 1px variables.$bg-gray;
+            height: min(100%, 600px);
+            max-width: 600px;
+            position: relative;
+
+            form {
+                background-color: variables.$bg-main;
+                padding: 1rem;
+                box-shadow: 0 -2px 5px variables.$bg-gray;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+
+                input {
+                    display: block;
+                    width: calc(100% - 60px - 1rem);
+                    background-color: transparent;
+                    border: solid 1px variables.$bg-gray;
+                    padding: 0.5rem;
+                    border-radius: 0.4rem;
+                    color: variables.$text-white;
+                }
+
+                button {
+                    width: 60px;
+                    background-color: variables.$bg-pink;
+                    border: solid 1px variables.$bg-gray;
+                    border-radius: 0.4rem;
+                    color: variables.$bg-main;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 10px variables.$bg-gray;
+                }
+            }
+
+            .gpt-typing-effect {
+                height: auto;
+                padding-left: 1rem;
+                background-color: variables.$bg-main;
+                padding: 1rem;
+                box-shadow: 0 -2px 5px variables.$bg-gray;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                gap: 1rem;
+                color: var(--text-gray);
+            }
+        }
+
+        .ai-assistant > div {
+            padding: 1rem;
+            overflow-y: scroll;
+            @include hide-scroll-bar();
+            height: min(100% - 5rem, 600px - 5rem);
+            margin-top: 0.5rem;
+
+            .GPT-text-box img, .user-text-box img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: solid 2px variables.$bg-blue;
+            }
+              
+            .GPT-text-box {
+                display: flex;
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+                margin-right: calc(30px + 0.6rem);
+                letter-spacing: 0.03rem;
+                line-height: 1.2;
+
+                .name-text-group .title {
+                    font-size: 0.8rem;
+                    color: variables.$text-pink;
+                    margin-bottom: 0.5rem;
+                    color: variables.$text-gray;
+                }
+                  
+                .name-text-group .text-content {
+                    border: solid 1px variables.$text-gray;
+                    border-radius: 0.5rem;
+                    padding: 0.6rem;
+                    line-height: 1.2;
+                }
+
+                .example-questions {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                  
+                .example-questions > p {
+                    border: solid 1px variables.$bg-gray;
+                    margin: 0.5rem;
+                    font-size: 0.8rem;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    color: variables.$text-green;
+                }
+                  
+                .example-questions > p:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 5px variables.$bg-green;
+                }
+            }
+              
+            .user-text-box {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+                margin-left: calc(30px + 0.6rem);
+                letter-spacing: 0.03rem;
+                line-height: 1.2;
+
+                .user-text-box .text-content {
+                    color: variables.$text-green;
+                }
+                  
+                .user-text-box .title {
+                    text-align: end;
+                }
+            }
+
+            .text-content .text-content-hint {
+                font-size: 0.8rem;
+                color: variables.$text-gray;
+                margin: 0.5rem auto;
+            }
+              
+            .text-content strong {
+                color: variables.$text-pink;
+            }
+        }
+
+        .ai-assistant > div::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .assistant-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        background: radial-gradient(circle at center, variables.$bg-green 0%, transparent 50%);
+        filter: blur(150px);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        animation: breath-blur 4s ease-in-out infinite;
+    }
+}
+
+
+
+@media only screen and (max-width: variables.$mobile-screen) {
+    .hello-wrapper {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+        height: calc(variables.$sub-container-height + 6rem);
+        padding-top: 3rem;
+    }
+  
+  
+    .hello-wrapper::-webkit-scrollbar-button {
+        display: none;
+    }
+  
+    .hello-wrapper::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+  
+    .brief-info {
+        margin: 2rem auto 4rem auto;
+    }
+    
+}

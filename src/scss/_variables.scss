@@ -19,3 +19,11 @@ $text-purple: #c98bdf;
 $stroke: #1e2d3d;
 
 // gradient colors
+
+// border style
+$general-border: 1px solid $stroke;
+
+
+// sizeing 
+$sub-container-height: calc(100vh - 6rem - 12px);
+$mobile-screen: 780px;
