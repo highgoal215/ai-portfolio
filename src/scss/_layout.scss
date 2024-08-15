@@ -132,6 +132,7 @@
                     border: solid 1px variables.$bg-gray;
                     border-radius: 0.4rem;
                     color: variables.$bg-main;
+                    text-align: center;
                 }
 
                 button:hover {
@@ -514,7 +515,7 @@
         }
           
         .mac-title-bar {
-            background: var(--bg-dark);
+            background: variables.$bg-dark;
             height: 2.2rem;
             display: flex;
             align-items: center;
@@ -717,17 +718,18 @@
     .contact-submit-btn {
         width: min(100%, 200px);
         margin-top: 1.5rem;
-        background-color: var(--bg-pink);
+        background-color: variables.$bg-pink;
         padding: 0.5rem;
-        color: var(--bg-dark);
+        color: variables.$bg-dark;
         border-radius: 0.4rem;
         font-size: 1rem;
         cursor: pointer;
         transition: .3s;
+        text-align: center;
     }
     
     .contact-submit-btn:hover {
-        box-shadow: 0 0 4px var(--bg-green);
+        box-shadow: 0 0 4px variables.$bg-green;
     }
     
     .email-sent-message {
@@ -878,7 +880,7 @@
     position: absolute;
     top: 0;
     background: radial-gradient(circle at 100%, #3da68667 0%, transparent 20%), radial-gradient(circle at 30%, #5561bb65 0%, transparent 20%);
-    /* background: radial-gradient(ellipse at left, var(--bg-green), transparent),
+    /* background: radial-gradient(ellipse at left, variables.$bg-green, transparent),
               radial-gradient(ellipse at right, variables.$bg-blue, transparent); */
     filter: blur(150px) brightness(30%);
     height: variables.$sub-container-height;
