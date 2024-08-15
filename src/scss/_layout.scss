@@ -577,7 +577,7 @@
     .skill-category {
         margin-bottom: 1.5rem;
         width: 100%;
-        border: solid 1px var(--bg-gray);
+        border: solid 1px variables.$bg-gray;
         border-radius: 1rem;
         padding: 1rem;
     }
@@ -599,7 +599,7 @@
         width: calc(50% - 1rem); 
         padding: 0.6rem;
         border-radius: 0.5rem;
-        background-color: var(--bg-gray);
+        background-color: variables.$bg-gray;
     }
 
     .skill-icon {
@@ -618,7 +618,7 @@
     }
 
     .progress-bar {
-        background-color: var(--text-white);
+        background-color: variables.$text-white;
         border-radius: 5px;
         overflow: hidden;
         margin-top: 5px;
@@ -635,19 +635,19 @@
     .experience-unit {
         padding: 1rem;
         border-radius: 1rem;
-        border: solid 1px var(--bg-gray);
+        border: solid 1px variables.$bg-gray;
         margin-bottom: 1.5rem;
     }
     
     .experience-unit h3 {
         font-size: 1.2rem;
         margin-bottom: 1rem;
-        color: var(--text-green);
+        color: variables.$text-green;
     }
     
     .comment-line {
         font-size: 0.8rem;
-        color: var(--text-gray);
+        color: variables.$text-gray;
         margin-bottom: 0.5rem;
     }
     
@@ -657,7 +657,7 @@
     }
     
     .desc-index {
-        color: var(--text-pink);
+        color: variables.$text-pink;
     }
 }
 
@@ -667,12 +667,7 @@
     }
   
     .skill {
-      display: flex;
-      align-items: center;
       width: 100%; 
-      padding: 0.6rem;
-      border-radius: 0.5rem;
-      background-color: var(--bg-gray);
     }
 }
 
@@ -714,7 +709,6 @@
         height: 0;
     }
     
-      
     .about-sidebar {
         box-sizing: border-box;
         height: fit-content;
@@ -757,23 +751,13 @@
     }
     
     .skill {
-        display: flex;
-        align-items: center;
         width: calc(50% - 1rem); 
-        padding: 0.6rem;
-        border-radius: 0.5rem;
-        background-color: var(--bg-gray);
     }
 }
 
 @media only screen and (max-width: 420px) {
 
     .skill {
-      display: flex;
-      align-items: center;
       width: 100%; 
-      padding: 0.6rem;
-      border-radius: 0.5rem;
-      background-color: var(--bg-gray);
     }
 }
