@@ -6,7 +6,6 @@ import ArrowDownLogo from "../LogoComponents/ArrowDownLogo";
 import EducationLogo from "../LogoComponents/EducationLogo";
 import SkillsLogo from "../LogoComponents/SkillsLogo";
 import ExperienceLogo from "../LogoComponents/ExperienceLogo";
-import "../../../css/about.css";
 
 export default function AboutLayout() {
     return (

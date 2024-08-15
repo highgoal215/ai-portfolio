@@ -1,6 +1,5 @@
 import AIAssistant from './AI/AIAssistant'
 import BriefInfo from './BriefInfo'
-import "../../../css/home.css"
 
 export default function Home() {
 

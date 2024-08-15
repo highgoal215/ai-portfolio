@@ -1,7 +1,6 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { sendEmail } from '../../email'
 import { FormData } from '../../types';
-import '../../css/contact.css';
 
 export default function Contact() {
     const [formData, setFormData] = useState<FormData>({

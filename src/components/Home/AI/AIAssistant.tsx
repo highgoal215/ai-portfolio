@@ -2,8 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import GptText from './GptText';
 import UserText from './UserText';
 import GptTyping from './GptTyping';
-// import { defaultPrompts } from '../../prompts';
-import "../../../../css/aiassistant.css";
 import { Message } from '../../../../types';
 
 const fetchUrl: string = "your worker url"
