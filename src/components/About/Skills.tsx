@@ -2,7 +2,7 @@ import CloseIcon from "../LogoComponents/CloseIcon";
 import { webDevSkillsData, otherSkillsData } from "../../../data";
 import SkillsCategory from "./SkillsCategory";
 import ModalLoadingAnimation from "./ModalLoadingAnimation";
-import "../../../css/skills.css";
+// import "../../../css/skills.css";
 
 export default function Skills() {
     return (

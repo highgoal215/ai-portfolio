@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 
 const activeStyles: React.CSSProperties = {
-    borderBottom: "2px solid var(--bg-pink)",
-    color: "var(--text-white)"
+    borderBottom: "2px solid #fea55f",
+    color: "#d2d7df"
 }
 
 export default function Header() {

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# sass compiled css file
+css/index.css
+css/index.css.map

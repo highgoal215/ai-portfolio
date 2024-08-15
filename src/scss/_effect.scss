@@ -1,0 +1,220 @@
+@use '_variables';
+
+.loading-effect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.loader {
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+}
+
+.typing {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: typing 1s infinite linear alternate;
+}
+
+@keyframes l5 {
+    0%  {box-shadow: 40px 0 variables.$text-pink, -40px 0 variables.$text-blue;background: variables.$text-pink }
+    33% {box-shadow: 40px 0 variables.$text-pink, -40px 0 variables.$text-blue;background: variables.$text-blue}
+    66% {box-shadow: 40px 0 variables.$text-blue,-40px 0 variables.$text-pink; background: variables.$text-blue}
+    100%{box-shadow: 40px 0 variables.$text-blue,-40px 0 variables.$text-pink; background: variables.$text-pink }
+}
+
+@keyframes typing {
+    0%  {box-shadow:20px 0 variables.$text-white, -20px 0 variables.$text-gray;background: variables.$text-white }
+    33% {box-shadow: 20px 0 variables.$text-white, -20px 0 variables.$text-gray;background: variables.$text-gray}
+    66% {box-shadow: 20px 0 variables.$text-gray,-20px 0 variables.$text-white; background: variables.$text-gray}
+    100%{box-shadow: 20px 0 variables.$text-gray,-20px 0 variables.$text-white; background: variables.$text-white }
+}
+
+/* Modal loading effect */
+@keyframes loadingBTT {
+    from {
+        opacity: 0.2;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingTTB {
+    from {
+        opacity: 0.2;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingLTR {
+    from {
+        opacity: 0.2;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingRTL {
+    from {
+        opacity: 0.2;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Not Found page style */
+.not-found-wrapper {
+    position: relative;
+    height: calc(100vh - 6rem - 12px);
+    background-color: variables.$bg-main;
+    background-image: radial-gradient(variables.$bg-main, variables.$bg-main);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: variables.$text-gray;
+    text-shadow:
+        0 0 1ex variables.$text-pink,
+        0 0 2px rgba(255, 255, 255, 0.8);
+}
+  
+.not-found-wrapper .noise {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .02;
+}
+  
+.not-found-wrapper .overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        repeating-linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0) 100%);
+    background-size: auto 4px;
+    z-index: 1;
+}
+  
+.not-found-wrapper .overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        0deg,
+        transparent 0%,
+        rgba(32, 85, 128, 0.2) 2%,
+        rgba(23, 55, 125, 0.8) 3%,
+        rgba(32, 69, 128, 0.2) 3%,
+        transparent 100%);
+    background-repeat: no-repeat;
+    animation: scan 7.5s linear 0s infinite;
+}
+  
+@keyframes scan {
+    0%        { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
+}
+  
+.not-found-wrapper .terminal {
+    box-sizing: inherit;
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+    max-width: 100%;
+    padding: 4rem;
+    text-transform: uppercase;
+}
+  
+.not-found-wrapper .output {
+    color: variables.$text-gray;
+    text-shadow:
+        0 0 1px variables.$text-green,
+        0 0 2px variables.$text-white;
+}
+  
+.output::before {
+    content: "> ";
+}
+  
+.not-found-wrapper a {
+    color: variables.$text-white;
+    text-decoration: none;
+}
+  
+.not-found-wrapper a::before {
+    content: "[";
+}
+  
+.not-found-wrapper a::after {
+    content: "]";
+}
+  
+.errorcode {
+    color: variables.$text-white;
+    font-size: 4rem;
+}
+
+.not-found-wrapper h1 {
+    font-size: 3rem;
+    margin: 2rem auto;
+    color: variables.$text-pink;
+}
+
+.not-found-wrapper p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 1.5rem auto;
+}
+
+.not-found-wrapper .output a {
+    background: linear-gradient(to right, variables.$text-white, variables.$text-white) no-repeat left bottom;
+    background-size: 0 2px;
+    transition: .5s;
+}
+
+.not-found-wrapper .output a:hover {
+    background-size: 100% 2px;
+}
+
+@media only screen and (max-width: 780px) {
+    .not-found-wrapper  {
+      padding-top: 3rem;
+      height: variables.$sub-container-height;
+    }
+}

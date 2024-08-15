@@ -2,7 +2,7 @@ import CloseIcon from "../LogoComponents/CloseIcon";
 import Experience from "./Experience";
 import { experience1, experience2 } from "../../../data";
 import ModalLoadingAnimation from "./ModalLoadingAnimation";
-import "../../../css/experience.css";
+// import "../../../css/experience.css";
 
 export default function TechExperiences() {
     return (

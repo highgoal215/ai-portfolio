@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
 import { projectsData } from '../../../data';
-import "../../../css/projects.css"
 
 import { ProjectInfo } from '../../../types'
 

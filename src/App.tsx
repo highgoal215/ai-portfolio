@@ -1,4 +1,5 @@
-import './App.css'
+import '../css/index.css'
+// import './App.css'
 import Layout from './components/Layout'
 import Home from './components/Home/Home'
 import About from './components/About/About'

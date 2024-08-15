@@ -5,7 +5,6 @@ import { Project } from "../../../types";
 import ImageCard from "./ImageCard";
 import ModalLoadingAnimation from "../About/ModalLoadingAnimation";
 import ArrowDownLogo from "../LogoComponents/ArrowDownLogo";
-import "../../../css/projects.css"
 import reactLogo from "../../../public/development-icons/react.svg";
 import aiLogo from "../../../public/development-icons/openai.png";
 import jsLogo from "../../../public/development-icons/javascript.svg";
