@@ -270,11 +270,11 @@
     .about-sidebar {
         box-sizing: border-box;
         height: 100%;
-        width: fit-content;
         display: flex;
         flex-direction: column;
         border: 1px solid variables.$stroke;
         border-top: 0;
+        width: fit-content;
 
         svg {
             width: 1rem;
@@ -312,6 +312,8 @@
             padding: 1rem 1.5rem;
             display: flex;
             align-items: center;
+            text-wrap: nowrap;
+            width: fit-content;
         }
 
         p:nth-child(1) {
@@ -320,6 +322,7 @@
 
         .about-contact-info {
             padding: 1rem 1.5rem;
+            width: fit-content;
         }
     }
 
@@ -353,6 +356,9 @@
             display: flex;
             align-items: center;
             border: variables.$general-border;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
         }
 
         svg {
@@ -460,113 +466,6 @@
         .bio-img-content img {
             width: min(100%, 400px);
             border-radius: 0.5rem;
-        }
-          
-        /* Video content part */  
-        .mac-screen-wrapper {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.5);
-        }
-          
-        .mac-screen-wrapper:hover {
-            box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.3);
-            /* transform: perspective(800px) translate3d(0, -25px, 50px); */
-            transition: 0.5s;
-        }
-          
-        .mac-container {
-            width: 100%;
-            max-width: 600px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            overflow: hidden;
-            background: variables.$bg-dark;
-            border: variables.$general-border;
-            color: variables.$text-white;
-        }
-          
-        .mac-screen {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            max-width: 640px;
-            overflow: hidden;
-            flex: 1 1 auto;
-        }
-          
-        .mac-screen iframe, .mac-screen a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            max-width: 640px;
-            height: 100%;
-            border: 0;
-            overflow: hidden;
-        }
-          
-        .mac-screen img {
-            width: 100%;
-        }
-          
-        .mac-title-bar {
-            background: variables.$bg-dark;
-            height: 2.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 0 10px;
-            border-bottom: variables.$general-border;
-        }
-          
-        .mac-title-bar .buttons {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-          
-        .mac-title-bar .button {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ff5f57;
-        }
-          
-        .mac-title-bar .button:nth-child(2) {
-            background: #ffbd2e;
-        }
-          
-        .mac-title-bar .button:nth-child(3) {
-            background: #28c940;
-        }
-          
-        .video-title {
-            margin: 1rem;
-            text-align: center;
-            font-size: 0.8rem;
-            line-height: 1.5rem;
-        }
-          
-        .interests-content {
-            box-sizing: border-box;
-            height: 100%;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-        }
-          
-        .interests-gallery {
-            --interset-gallery-height: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            height: 100%;
-            max-width: calc((100vh - 6rem) / 2);
         }
     }
 
@@ -861,6 +760,87 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+
+    .mac-screen-wrapper {
+        width: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.5);
+    }
+      
+    .mac-screen-wrapper:hover {
+        box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.3);
+        transition: 0.5s;
+    }
+      
+    .mac-container {
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        background: variables.$bg-dark;
+        border: variables.$general-border;
+        color: variables.$text-white;
+    }
+      
+    .mac-screen {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        flex: 1 1 auto;
+    }
+      
+    .mac-screen img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+      
+    .mac-title-bar {
+        background: variables.$bg-dark;
+        height: 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 10px;
+        border-bottom: variables.$general-border;
+    }
+      
+    .mac-title-bar .buttons {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+      
+    .mac-title-bar .button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ff5f57;
+    }
+      
+    .mac-title-bar .button:nth-child(2) {
+        background: #ffbd2e;
+    }
+      
+    .mac-title-bar .button:nth-child(3) {
+        background: #28c940;
+    }
+      
+    .project-title {
+        margin: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
 }
   
 @keyframes breath {
@@ -906,11 +886,6 @@
   
 .projects-wrapper::-webkit-scrollbar-track {
     background-color: variables.$bg-main;
-}
-  
-.projects-wrapper .mac-screen-wrapper {
-    position: relative;
-    max-width: 400px;
 }
   
 .imageCardHover {
@@ -1085,6 +1060,7 @@
     display: none;
 }
 
+
 @keyframes message-display {
     0%, 100% {
         opacity: 0;
@@ -1121,9 +1097,8 @@
         grid-template-columns: 1fr;
         overflow-y: scroll;
         height: calc(variables.$sub-container-height + 6rem);
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
-  
   
     .hello-wrapper::-webkit-scrollbar-button {
         display: none;
@@ -1133,6 +1108,8 @@
         width: 0;
         height: 0;
     }
+
+    .site-
   
     .brief-info {
         margin: 2rem auto 4rem auto;
@@ -1154,42 +1131,48 @@
         height: 0;
     }
     
-    .about-sidebar {
-        box-sizing: border-box;
-        height: fit-content;
-        width: 100%;
-        display: flex;
-    }
-    
-    .about-sidebar nav{
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 1rem 1.5rem;
-        gap: 1rem;
-    }
-    
-    .about-sidebar a {
-        margin-bottom: 0;
-    }
-    
-    .about-sidebar .about-contact-title {
-        display: none;
+    .about-wrapper {
+        .about-sidebar {
+            height: fit-content;
+            width: 100%;
+            display: flex;
+
+            p {
+                width: 100%;
+            }
+        }
+        
+        .about-sidebar nav{
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1rem 1.5rem;
+            gap: 1rem;
+        }
+        
+        .about-sidebar a {
+            margin-bottom: 0;
+        }
+        
+        .about-sidebar .about-contact-title {
+            display: none;
+        }
     }
     
     .about-contact-info {
         display: none;
     }
     
-    .bio-wrapper {
-        height: fit-content;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    .bio-content, .bio-text {
-        height: fit-content;
-    }
+    .about-wrapper{
+        .bio-wrapper {
+            height: fit-content;
+            width: 100%;
+            grid-template-columns: 1fr;
+
+            .bio-content, .bio-text {
+                height: fit-content;
+            }
+        }
+    }  
 
     .skills-list {
         flex-direction: row;
@@ -1198,11 +1181,26 @@
     .skill {
         width: calc(50% - 1rem); 
     }
+
+    .projects-home {
+        margin-top: 3rem;
+    }
+
+    .project-sidebar {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-
     .skill {
       width: 100%; 
+    }
+
+    .modal-loading-animation-container {
+        width: 90%;
+    }
+
+    .mac-screen-wrapper {
+        width: 100%;
     }
 }

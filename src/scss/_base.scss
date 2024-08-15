@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 /* header style */
@@ -88,7 +88,7 @@ footer {
 
 @media only screen and (max-width: variables.$mobile-screen) {
 
-    .site-logo, .header-email, footer-left > p {
+    .site-logo, header .header-email, footer .footer-left > p {
         display: none;
     }
 
