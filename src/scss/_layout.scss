@@ -260,6 +260,407 @@
     }
 }
 
+/* About page style */
+.about-wrapper {
+    height: variables.$sub-container-height;
+    display: flex;
+    padding: 0;
+
+    .about-sidebar {
+        box-sizing: border-box;
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid variables.$stroke;
+        border-top: 0;
+
+        svg {
+            width: 1rem;
+            margin-right: 0.5rem;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1.5rem;
+
+            svg {
+                stroke: variables.$text-gray;
+            }
+
+            .link-actived {
+                color: var(--text-white);
+
+                svg {
+                    stroke: variables.$text-white;
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            border: variables.$general-border;
+            border-left: none;
+            border-right: none;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        p:nth-child(1) {
+            border-top: none;
+        }
+
+        .about-contact-info {
+            padding: 1rem 1.5rem;
+        }
+    }
+
+    .bio-wrapper {
+        height: variables.$sub-container-height;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .bio-text {
+            height: variables.$sub-container-height;
+            width: 100%;
+            border: variables.$general-border;
+            border-top: none;
+        }
+
+        .bio-sub-title {
+            height: 3rem;
+            width: 100%;
+            border: variables.$general-border;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .bio-sub-title > p {
+            height: 100%;
+            padding-left: 1rem;
+            color: variables.$text-gray;
+            display: flex;
+            align-items: center;
+            border: variables.$general-border;
+        }
+
+        svg {
+            width: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        .bio-content {
+            overflow-y: auto;
+            height: calc(100% - 3.1rem);
+
+            .title {
+                color: variables.$text-pink;
+            }
+        }
+
+        .bio-content::-webkit-scrollbar, .skills-content::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+          
+        .bio-content::-webkit-scrollbar-button, .skills-content::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        .skills-content{
+            overflow-y: auto;
+            height: calc(100% - 3.1rem);
+        }
+
+        /* Additional customization for the scrollbar track and thumb */
+        .bio-content::-webkit-scrollbar-thumb, .skills-content::-webkit-scrollbar-thumb {
+            background-color: var(--bg-gray);
+            height: 1rem;
+        }
+        
+        .bio-content::-webkit-scrollbar-track, .skills-content::-webkit-scrollbar-track {
+            background-color: variables.$bg-main;
+        }
+
+        .text-lines {
+            color: variables.$text-white;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+          
+        .text-lines .line {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+          
+        .text-lines p {
+            margin-bottom: 0.5rem;
+            display: flex;
+        }
+          
+        .text-lines .index {
+            display: inline-block;
+            margin-right: 1.5rem;
+            text-align: right;
+            width: 2rem;
+        }
+          
+        .text-lines .text {
+            display: inline-block;
+            width: 100%;
+            flex-grow: 1;
+        }
+          
+        .text-lines span:nth-child(2) {
+            width: 100%;
+        }
+          
+        .text-line-measurement {
+            visibility: hidden;
+            position: absolute;
+            white-space: nowrap;
+        }
+          
+        .strong-text-wrapper {
+            display: inline;
+        }
+          
+        .strong-text-wrapper strong {
+            color: variables.$text-pink;
+        }
+          
+        /* bio image part */
+        .bio-img {
+            box-sizing: border-box;
+            height: variables.$sub-container-height;
+            width: 100%;
+            border: variables.$general-border;
+            border-top: none;
+            border-left: none;
+        }
+          
+        .bio-img-content {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+          
+        .bio-img-content img {
+            width: min(100%, 400px);
+            border-radius: 0.5rem;
+        }
+          
+        /* Video content part */  
+        .mac-screen-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.5);
+        }
+          
+        .mac-screen-wrapper:hover {
+            box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.3);
+            /* transform: perspective(800px) translate3d(0, -25px, 50px); */
+            transition: 0.5s;
+        }
+          
+        .mac-container {
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            background: variables.$bg-dark;
+            border: variables.$general-border;
+            color: variables.$text-white;
+        }
+          
+        .mac-screen {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            max-width: 640px;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+          
+        .mac-screen iframe, .mac-screen a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-width: 640px;
+            height: 100%;
+            border: 0;
+            overflow: hidden;
+        }
+          
+        .mac-screen img {
+            width: 100%;
+        }
+          
+        .mac-title-bar {
+            background: var(--bg-dark);
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 10px;
+            border-bottom: variables.$general-border;
+        }
+          
+        .mac-title-bar .buttons {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+          
+        .mac-title-bar .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff5f57;
+        }
+          
+        .mac-title-bar .button:nth-child(2) {
+            background: #ffbd2e;
+        }
+          
+        .mac-title-bar .button:nth-child(3) {
+            background: #28c940;
+        }
+          
+        .video-title {
+            margin: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+        }
+          
+        .interests-content {
+            box-sizing: border-box;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+          
+        .interests-gallery {
+            --interset-gallery-height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+            max-width: calc((100vh - 6rem) / 2);
+        }
+    }
+
+    /* Skills Styling */
+    .skills-wrapper {
+        padding: 1rem;
+    }
+    
+    .skill-category {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        border: solid 1px var(--bg-gray);
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .skill-category h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        width: calc(50% - 1rem); 
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+        background-color: var(--bg-gray);
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.6rem;
+    }
+
+    .skill-info {
+        flex: 1;
+    }
+
+    .skill-info h4 {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .progress-bar {
+        background-color: var(--text-white);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 5px;
+        height: 10px;
+    }
+
+    .progress {
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 5px;
+    }
+
+    /* Experience */
+    .experience-unit {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: solid 1px var(--bg-gray);
+        margin-bottom: 1.5rem;
+    }
+    
+    .experience-unit h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: var(--text-green);
+    }
+    
+    .comment-line {
+        font-size: 0.8rem;
+        color: var(--text-gray);
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-unit ul li {
+        margin: 0.8rem auto;
+        line-height: 1.3;
+    }
+    
+    .desc-index {
+        color: var(--text-pink);
+    }
+}
+
 
 
 @media only screen and (max-width: variables.$mobile-screen) {
@@ -282,6 +683,60 @@
   
     .brief-info {
         margin: 2rem auto 4rem auto;
+    }
+
+    .about-wrapper {
+        flex-wrap: wrap;
+        height: calc(100vh - 3rem - 12px);
+        overflow-y: scroll;
+        padding-top: 3rem;
+    }
+    
+    .about-wrapper::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    .about-wrapper::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    
+      
+    .about-sidebar {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+    }
+    
+    .about-sidebar nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+    
+    .about-sidebar a {
+        margin-bottom: 0;
+    }
+    
+    .about-sidebar .about-contact-title {
+        display: none;
+    }
+    
+    .about-contact-info {
+        display: none;
+    }
+    
+    .bio-wrapper {
+        height: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .bio-content, .bio-text {
+        height: fit-content;
     }
     
 }
