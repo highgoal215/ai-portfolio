@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../../css/modal-loading.css";
 import { ModalLoadingAnimationProps } from '../../../types';
 
 export default function ModalLoadingAnimation({ children, duration, direction }: ModalLoadingAnimationProps) {
