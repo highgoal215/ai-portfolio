@@ -661,7 +661,20 @@
     }
 }
 
-
+@media only screen and (max-width: 1140px) {
+    .skills-list {
+      flex-direction: column;
+    }
+  
+    .skill {
+      display: flex;
+      align-items: center;
+      width: 100%; 
+      padding: 0.6rem;
+      border-radius: 0.5rem;
+      background-color: var(--bg-gray);
+    }
+}
 
 @media only screen and (max-width: variables.$mobile-screen) {
     .hello-wrapper {
@@ -738,5 +751,29 @@
     .bio-content, .bio-text {
         height: fit-content;
     }
+
+    .skills-list {
+        flex-direction: row;
+    }
     
+    .skill {
+        display: flex;
+        align-items: center;
+        width: calc(50% - 1rem); 
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+        background-color: var(--bg-gray);
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .skill {
+      display: flex;
+      align-items: center;
+      width: 100%; 
+      padding: 0.6rem;
+      border-radius: 0.5rem;
+      background-color: var(--bg-gray);
+    }
 }
