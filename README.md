@@ -43,6 +43,10 @@ This project is a personal portfolio website built with React and TypeScript, fe
    ```
    npm run dev
    ```
-
+4. **Process SCSS code**
+   ```
+   sass --watch src/scss/index.scss  css/index.css
+   ```
+   
 ### Credit
 Design inspiration and credit go to [Yanka Darelova](https://www.figma.com/@darelova)
