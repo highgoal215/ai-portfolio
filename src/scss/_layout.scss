@@ -772,7 +772,7 @@
     }
       
     .mac-screen-wrapper:hover {
-        box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.3);
+        box-shadow: 5px 5px 100px rgba(255, 255, 255, 0.139);
         transition: 0.5s;
     }
       
@@ -1200,7 +1200,7 @@
         width: 90%;
     }
 
-    .mac-screen-wrapper {
-        width: 100%;
+    .projects-wrapper .mac-screen-wrapper {
+        width: 300px;
     }
 }
