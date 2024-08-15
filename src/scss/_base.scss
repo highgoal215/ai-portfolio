@@ -19,19 +19,21 @@ header {
     .header-email {
         display: block;
         margin-left: auto;
+        border-left: variables.$general-border;
     }
 
     a {
         padding: 1rem 1.5rem;
         border: variables.$general-border;
         border-bottom: none;
-        border-right: none;
-        transition: color .3s, border-color .5s;
+        border-left: none;
+        transition: color .3s, border-color .3s;
     }
 
     .site-logo {
         padding-right: 6rem;
     }
+
 }
 
 /* footer style */

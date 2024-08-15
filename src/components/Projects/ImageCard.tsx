@@ -39,7 +39,7 @@ export default function ImageCard({
         <div className="mac-screen">
           <img src={imgSrc} alt={title} />
         </div>
-        <div className="video-title">{title}</div>
+        <div className="project-title">{title}</div>
       </div>
     </div>
   );
