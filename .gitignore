@@ -26,3 +26,6 @@ dist-ssr
 # sass compiled css file
 css/index.css
 css/index.css.map
+
+# environment variables
+.env
